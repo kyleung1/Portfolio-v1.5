@@ -1,7 +1,9 @@
+import Project_Preview from "../Project_Preview";
+
 export default function page() {
     return (
       <>
-        <h1>this is the Work page</h1>
+        <Project_Preview/>
       </>
     )
   }
