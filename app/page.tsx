@@ -8,6 +8,7 @@ export default function Home() {
       <Landing/>
       <Spacing/>
       <Project_Preview/>
+      <Spacing/>
     </div>
   )
 }
