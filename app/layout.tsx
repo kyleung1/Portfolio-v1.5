@@ -1,3 +1,4 @@
+import Footer from './Footer'
 import './globals.css'
 import Nav from './Nav'
 import Sidebar from './Sidebar'
@@ -19,6 +20,7 @@ export default function RootLayout({
         <Nav></Nav>
         <Sidebar/>
         {children}
+        <Footer/>
       </body>
     </html>
   )
