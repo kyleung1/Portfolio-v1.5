@@ -1,1 +1,1 @@
-View my [site](https://portfolio-v1-5-kappa.vercel.app/Projects)
+View my [site](https://portfolio-v1-5-kappa.vercel.app/)
