@@ -3,7 +3,7 @@ export default function Skills() {
     <>
       <div className="flex flex-col justify-center items-center ms mt-20" data-aos="fade-right">
         <h1 className="text-5xl text-indigo-800">Skills</h1>
-        <div className="flex flex-wrap justify-center gap-10 my-20 lg:w-5/6 lg:gap-2 md:w-5/6 md:gap-1 sm:w-2/3 sm:gap-1">
+        <div className="flex flex-wrap justify-center xl:gap-10 lg:gap-2 gap-2 my-20 w-5/6">
           
           <div className="h-[500px] w-64 border-2 border-indigo-800" data-aos="fade-right" data-aos-duration="2000">
             <h2 className="text-center p-3 text-2xl font-serif">Languages</h2>

@@ -1,7 +1,7 @@
 'use client';
 
 import AOS from 'aos';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
 
@@ -10,28 +10,65 @@ export default function Sidebar() {
     AOS.init();
   }, [])
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    if ((window.pageYOffset as number) > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-1/2 flex flex-col gap-2 p-2 border-t-4 border-r-4 border-b-4 border-indigo-800 z-10" data-aos="fade-right">
-      <div className="group overflow-hidden">
-        <Link href="https://github.com/kyleung1">
-          <img src="/github.png" alt="github" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
-        </Link>
+    <div>
+      <div className="fixed top-1/2 flex flex-col gap-2 p-2 border-t-4 border-r-4 border-b-4 border-indigo-800 z-10" data-aos="fade-right">
+        <div className="group overflow-hidden">
+          <Link href="https://github.com/kyleung1">
+            <img src="/github.png" alt="github" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
+          </Link>
+        </div>
+        <div className="group overflow-hidden">
+          <Link href="https://www.linkedin.com/in/kyle-leung412/">
+            <img src="/linkedin.png" alt="linkedin" className="w-14 transform transition-all duration-300 group-hover:scale-100 scale-90" />
+          </Link>
+        </div>
+        <div className="group overflow-hidden">
+          <Link href="https://www.instagram.com/kylewl000/">
+            <img src="/insta.png" alt="instagram" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
+          </Link>
+        </div>
+        <div className="group overflow-hidden">
+          <Link href = "mailto: leungkyle2@gmail.com" className="">
+            <img src="/mail.webp" alt="email" className="w-14 transform transition-all duration-300 group-hover:scale-125 scale-110"/>
+          </Link>
+        </div>
       </div>
-      <div className="group overflow-hidden">
-        <Link href="https://www.linkedin.com/in/kyle-leung412/">
-          <img src="/linkedin.png" alt="linkedin" className="w-14 transform transition-all duration-300 group-hover:scale-100 scale-90" />
-        </Link>
-      </div>
-      <div className="group overflow-hidden">
-        <Link href="https://www.instagram.com/kylewl000/">
-          <img src="/insta.png" alt="instagram" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
-        </Link>
-      </div>
-      <div className="group overflow-hidden">
-        <Link href = "mailto: leungkyle2@gmail.com" className="">
-          <img src="/mail.webp" alt="email" className="w-14 transform transition-all duration-300 group-hover:scale-125 scale-110"/>
-        </Link>
-      </div>
+
+      {isVisible && (
+        <button
+        className="fixed top-1/2 right-0 flex flex-col gap-2 p-2 border-t-4 border-l-4 border-b-4 border-indigo-800 z-10" data-aos="fade-left"
+          onClick={scrollToTop}
+        >
+          Back to Top
+        </button>
+      )}
+
     </div>
+    
   )
 }
