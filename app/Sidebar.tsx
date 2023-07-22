@@ -11,7 +11,7 @@ export default function Sidebar() {
   }, [])
 
   return (
-    <div className="fixed top-1/2 flex flex-col gap-2 p-2 border-t-4 border-r-4 border-b-4 border-indigo-800" data-aos="fade-right">
+    <div className="fixed top-1/2 flex flex-col gap-2 p-2 border-t-4 border-r-4 border-b-4 border-indigo-800 z-10" data-aos="fade-right">
       <div className="group overflow-hidden">
         <Link href="https://github.com/kyleung1">
           <img src="/github.png" alt="github" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
@@ -25,6 +25,11 @@ export default function Sidebar() {
       <div className="group overflow-hidden">
         <Link href="https://www.instagram.com/kylewl000/">
           <img src="/insta.png" alt="instagram" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
+        </Link>
+      </div>
+      <div className="group overflow-hidden">
+        <Link href = "mailto: leungkyle2@gmail.com" className="">
+          <img src="/mail.webp" alt="email" className="w-14 transform transition-all duration-300 group-hover:scale-125 scale-110"/>
         </Link>
       </div>
     </div>
