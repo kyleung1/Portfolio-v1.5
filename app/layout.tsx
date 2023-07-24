@@ -15,11 +15,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className=''>
-      <link rel="icon" href="/shinji.png" sizes="any" />
+      <body className='flex flex-col min-h-screen'>
+        <link rel="icon" href="/shinji.png" sizes="any" />
         <Nav></Nav>
         <Sidebar/>
-        {children}
+        <div className='flex-grow'>
+          {children}
+        </div>
         <Footer/>
       </body>
     </html>
