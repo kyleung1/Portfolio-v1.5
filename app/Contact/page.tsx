@@ -4,7 +4,7 @@ import Link from "next/link"
 import emailjs from '@emailjs/browser'
 import { useRef } from "react";
 
-export default function page() {
+export default function ContactPage() {
     const Email = useRef<HTMLInputElement>(null);
     const Message = useRef<HTMLTextAreaElement>(null);
 
