@@ -9,14 +9,14 @@ export default function Home() {
     <div>
       <Landing/>
       <Spacing/>
-      <Project_Preview/>
-      <Spacing/>
       <Skills/>
+      <Spacing/>
+      <Project_Preview/>
       <div className="flex justify-center my-20">
-        <Link href="/ComingSoon"><button className="w-24 border-2">More About Me</button></Link>
+        <Link href="/About"><button className="w-24 border-2 border-violet-800 hover:bg-indigo-800 hover:text-white transition duration-300 rounded-md p-2">More About Me</button></Link>
       </div>
       <div className="flex justify-center my-20">
-        <Link href="/Contact"><button className="w-24 border-2">Contact Me</button></Link>
+        <Link href="/Contact"><button className="w-24 border-2 border-violet-800 hover:bg-indigo-800 hover:text-white transition duration-300 rounded-md p-2">Contact Me</button></Link>
       </div>
       
     </div>

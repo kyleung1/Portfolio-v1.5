@@ -36,7 +36,7 @@ export default function Sidebar() {
 
   return (
     <div>
-      <div className="fixed top-1/2 flex flex-col gap-2 p-2 border-t-4 border-r-4 border-b-4 border-indigo-800 z-10" data-aos="fade-right">
+      <div className="fixed top-1/2 flex flex-col gap-2 p-2 border-t-4 border-r-4 border-b-4 border-indigo-800 z-10 rounded-sm" data-aos="fade-right">
         <div className="group overflow-hidden">
           <Link href="https://github.com/kyleung1">
             <img src="/github.png" alt="github" className="w-14 transform transition-all duration-300 group-hover:scale-110" />
@@ -61,7 +61,7 @@ export default function Sidebar() {
 
       {isVisible && (
         <button
-        className="fixed top-1/2 right-0 flex flex-col gap-2 p-2 border-t-4 border-l-4 border-b-4 border-indigo-800 z-10" data-aos="fade-left"
+        className="fixed top-1/2 right-0 flex flex-col gap-2 p-2 border-t-4 border-l-4 border-b-4 border-indigo-800 hover:bg-indigo-800 hover:text-white transition duration-300 z-10 rounded-sm" data-aos="fade-left"
           onClick={scrollToTop}
         >
           Back to Top
