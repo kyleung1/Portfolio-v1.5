@@ -44,7 +44,8 @@ export default function ContactPage() {
           <input ref={Email} className="w-2/5 border-2 border-indigo-800" placeholder="Email:" type="email" required/>
           {isVisible && (<p>Email is not valid</p>)}
           <textarea ref={Message} className="w-2/5 h-52 my-10 border-2 border-indigo-800" required/>
-          <button onClick={sendEmail} className="border-2 hover:border-indigo-300 p-2">Send</button>
+          <button onClick={sendEmail} className="border-2 border-indigo-800 hover:bg-indigo-800 hover:text-white p-2">Send</button>
+
           
           <p className="my-10">Alternatively my email is leungkyle2@gmail.com</p>
         </div>
