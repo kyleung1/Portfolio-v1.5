@@ -142,7 +142,7 @@ export default function Project_Preview() {
               <Link href="https://kyleung1.newGithub.io/SeattleCrimeLocator/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/crimelocator.PNG" alt="seattle crime locator"/></Link>
               <p className='text-black my-3'>JavaScript, HTML, CSS, OpenLayers</p>
               {/* <p> A simple web application to locate the nearest crime from either the user's ip address or a given address. The web app sources it's data from the spd public dataset on the Seattle Open Data portal that is updated daily. This was my first ever web application built and I am proud of my progress since. </p> */}
-              <p>hello</p>
+              <p>A simple web application to locate the nearest crime from either the user's ip address or a given address. The web app sources it's data from the spd public dataset on the Seattle Open Data Portal that is updated daily. This was my first ever web application built and I am proud of my progress since. </p>
               <div className='flex justify-end'>
                 <div className='w-10' onMouseEnter={() => {sethideGit5(false)}} onMouseLeave={() => {sethideGit5(true)}}>
                   {hideGit5 && (
