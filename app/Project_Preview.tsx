@@ -113,7 +113,7 @@ export default function Project_Preview() {
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Web Dev Evaluator</h1>
               <Link href="https://webdev-evaluator.vercel.app/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/webdeveval.PNG" alt="web dev evaluator"/></Link>
               <p className='text-black my-3'>Next.js, TypeScript, Tailwind, Rust, MongoDB</p>
-              {/* <p> A website that provides sentiment and statistics about each web development technology in 2022. Gathered and analyzed a dataset of over 48,000 tweets. </p> */}
+              <p> A website that provides sentiment and statistics about each web development technology in 2022. Gathered and analyzed a dataset of over 48,000 tweets. </p>
               <div className='flex justify-end'>
                 <div className='w-10' onMouseEnter={() => {sethideGit4(false)}} onMouseLeave={() => {sethideGit4(true)}}>
                   {hideGit4 && (
@@ -141,7 +141,7 @@ export default function Project_Preview() {
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Seattle Crime Locator</h1>
               <Link href="https://kyleung1.newGithub.io/SeattleCrimeLocator/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/crimelocator.PNG" alt="seattle crime locator"/></Link>
               <p className='text-black my-3'>JavaScript, HTML, CSS, OpenLayers</p>
-              <p> A simple web application to locate the nearest crime from either the user's ip address or a given address. The web app sources it's data from the spd public dataset on the Seattle Open Data portal that is updated daily. This was my first ever web application built and I am proud of my progress since. </p>
+              {/* <p> A simple web application to locate the nearest crime from either the user's ip address or a given address. The web app sources it's data from the spd public dataset on the Seattle Open Data portal that is updated daily. This was my first ever web application built and I am proud of my progress since. </p> */}
               <div className='flex justify-end'>
                 <div className='w-10' onMouseEnter={() => {sethideGit5(false)}} onMouseLeave={() => {sethideGit5(true)}}>
                   {hideGit5 && (
