@@ -24,7 +24,7 @@ export default function Project_Preview() {
         </div>
         <div className="flex justify-center">
           <div className='flex flex-wrap gap-10 justify-center my-20 w-3/4'>
-            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] xl:h-[600px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
+            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Personal Website</h1>
               <img className="transform transition-all duration-300 hover:scale-110 my-3" src="/personal-site.PNG" alt="personal site"/>
               <p className='text-black my-3'>Next.js, Tailwind, Node.js, TypeScript</p>
@@ -53,7 +53,7 @@ export default function Project_Preview() {
               </div>
               
             </div>
-            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] xl:h-[600px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
+            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Package Tracker</h1>
               <Link href="https://packagetracker.tech/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/package-tracker.PNG" alt="package tracker"/></Link>
               <p className='text-black my-3'>Next.js, Firebase, Node.js, TypeScript</p>
@@ -81,7 +81,7 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
-            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] xl:h-[600px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
+            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Replayed</h1>
               <Link href="https://replayedgg.vercel.app/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/replayed.PNG" alt="replayed"/></Link>
               <p className='text-black my-3'>Svelte, Tailwind, TypeScript, Chart.js</p>
@@ -109,7 +109,7 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
-            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] xl:h-[600px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
+            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Web Dev Evaluator</h1>
               <Link href="https://webdev-evaluator.vercel.app/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/webdeveval.PNG" alt="web dev evaluator"/></Link>
               <p className='text-black my-3'>Next.js, TypeScript, Tailwind, Rust, MongoDB</p>
@@ -137,7 +137,7 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
-            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] xl:h-[600px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
+            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Seattle Crime Locator</h1>
               <Link href="https://kyleung1.newGithub.io/SeattleCrimeLocator/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/crimelocator.PNG" alt="seattle crime locator"/></Link>
               <p className='text-black my-3'>JavaScript, HTML, CSS, OpenLayers</p>
