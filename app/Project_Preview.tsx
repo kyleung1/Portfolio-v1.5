@@ -85,7 +85,7 @@ export default function Project_Preview() {
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Replayed</h1>
               <Link href="https://replayedgg.vercel.app/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/replayed.PNG" alt="replayed"/></Link>
               <p className='text-black my-3'>Svelte, Tailwind, TypeScript, Chart.js</p>
-              {/* <p> A web game that challenges players to guess the rank of a player based on a short video. The game features videos of games such as League of Legends, Valorant, and Overwatch2. There are two game modes: traditional where the user guesses one video and duel where the user guesses between 2 videos who has the higher rank. </p> */}
+              <p> A web game that challenges players to guess the rank of a player based on a short video. The game features videos of games such as League of Legends, Valorant, and Overwatch2. There are two game modes: traditional where the user guesses one video and duel where the user guesses between 2 videos who has the higher rank. </p>
               <div className='flex justify-end'>
                 <div className='w-10' onMouseEnter={() => {sethideGit3(false)}} onMouseLeave={() => {sethideGit3(true)}}>
                   {hideGit3 && (
