@@ -25,7 +25,7 @@ export default function Skills() {
           </div>
 
           <div className="h-[500px] w-64 border-2 border-indigo-800 rounded-md shadow-2xl" data-aos="fade-right" data-aos-duration="1500">
-            <h2 className="text-center p-3 font-serif xl:text-2xl lg:text-xl md:text-lg sm:text-base">Libraries/Frameworks</h2>
+            <h2 className="text-center p-3 font-serif xl:text-xl lg:text-lg md:text-md sm:text-base">Libraries/Frameworks</h2>
             <div className="flex justify-center">
               <ul className="grid grid-cols-2 gap-2">
                 <li className="flex flex-col justify-center items-center my-4"><img className="w-10 mx-2" src="/techs/react.png" alt="reactjs"/><p className="font-sans">React</p></li>

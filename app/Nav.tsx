@@ -2,14 +2,13 @@ import Link from "next/link";
 
 export default function Nav() {
     return (
-      <div className="flex justify-between p-2">
-        <div className="float-left"><p className="mx-6">Kyle Leung</p></div>
+      <div className="flex justify-end p-2">
         <div className="float-right">
-          <Link href='/' className="mx-6 hover:underline hover:text-rose-500">Home</Link>
-          <Link href='/Projects' className="mx-6 hover:underline hover:text-rose-500">Projects</Link>
-          <Link href='/Skills' className="mx-6 hover:underline hover:text-rose-500">Skills</Link>
-          <Link href='/About' className="mx-6 hover:underline hover:text-rose-500">About</Link>
-          <Link href='/Contact' className="mx-6 hover:underline hover:text-rose-500">Contact</Link>
+          <Link href='/' className="sm:mx-6 mx-2 hover:underline hover:text-rose-500">Home</Link>
+          <Link href='/Projects' className="sm:mx-6 mx-2 hover:underline hover:text-rose-500">Projects</Link>
+          <Link href='/Skills' className="sm:mx-6 mx-2 hover:underline hover:text-rose-500">Skills</Link>
+          <Link href='/About' className="sm:mx-6 mx-2 hover:underline hover:text-rose-500">About</Link>
+          <Link href='/Contact' className="sm:mx-6 mx-2 hover:underline hover:text-rose-500">Contact</Link>
         </div>
       </div>
     )

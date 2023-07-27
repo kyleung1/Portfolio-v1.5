@@ -6,7 +6,7 @@ export default function landing() {
           <h1 className="lg:text-9xl md:text-7xl text-6xl text-indigo-800 font-sans ">Kyle Leung</h1>
           <h2 className="lg:text-3xl text-2xl mt-10"><span className="lg:text-xl text-lg ml-3">based in</span> Seattle, Washington</h2>
         </div>
-        <div className="w-1/4"><img src="/Kyle.PNG" alt="me"/></div>
+        <div className="w-1/4 shadow-2xl"><img src="/Kyle.PNG" alt="me" className="rounded-md"/></div>
       </div>
       
       <div className="flex justify-center my-52">
