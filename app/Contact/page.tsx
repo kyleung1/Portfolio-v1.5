@@ -8,7 +8,7 @@ export default function ContactPage() {
     const Email = useRef<HTMLInputElement>(null);
     const Message = useRef<HTMLTextAreaElement>(null);
 
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false); // whether or not error message of valid email is visible
 
     const sendEmail:React.MouseEventHandler<HTMLButtonElement> = (e) => {
       e.preventDefault();
