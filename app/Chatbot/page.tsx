@@ -18,7 +18,8 @@ interface requestBody {
 export default function Page() {
     const [hideSend, sethideSend] = useState(true); // toggles button hover effeect
     const [session, setSession] = useState <number> ();
-    const [messages, setMessages] = useState<string[]>([])
+    const [messages, setMessages] = useState<string[]>([]);
+    const [loading, setLoading] = useState(false);
 
     const chatWindow: RefObject<HTMLDivElement> = useRef(null);
     const user_input: RefObject<HTMLInputElement> = useRef(null);
@@ -30,6 +31,8 @@ export default function Page() {
     }, [messages])
 
     async function getResponse() {
+      setLoading(true);
+
       let user_msg = user_input.current?.value;
       if (user_msg){
         addMessage(user_msg);
@@ -55,6 +58,7 @@ export default function Page() {
     };
 
     function handleResponse(response: ChatResponse) {
+      setLoading(false);
       if (session !== response.session) {
         setSession(response.session);
       };
@@ -78,6 +82,9 @@ export default function Page() {
                   {messages.map((message, index) => (
                     <div key={index} className={`${index % 2 === 0 ? '' : 'text-indigo-500'} py-3 px-32 text-center border-b-2 border-neutral-300`}>{message}</div>
                   ))}
+                  {loading && (
+                    <div className="flex justify-center"><img src="/loading.gif" alt="loading animation"/></div>
+                  )}
                 </div>
                 <div className="w-full bg-violet-300 p-2 flex justify-around border-t-2 border-black">
                   <input
