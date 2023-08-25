@@ -16,14 +16,17 @@ export default function Project_Preview() {
     const [hideEx4, sethideEx4] = useState(true); 
     const [hideGit5, sethideGit5] = useState(true); 
     const [hideEx5, sethideEx5] = useState(true); //one for each project div box
+    const [hideGit6, sethideGit6] = useState(true); 
+    const [hideEx6, sethideEx6] = useState(true); 
 
     return (
       <div>
-        <div className="flex justify-center mt-20" data-aos="fade-right">
+        <div className="flex justify-center mt-20" data-aos="fade-up">
           <h1 className="text-5xl text-indigo-800">Projects</h1>
         </div>
         <div className="flex justify-center">
           <div className='flex flex-wrap gap-10 justify-center my-20 w-3/4'>
+            
             <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Personal Website</h1>
               <img className="transform transition-all duration-300 hover:scale-110 my-3" src="/personal-site.PNG" alt="personal site"/>
@@ -51,8 +54,37 @@ export default function Project_Preview() {
                   )}
                 </div>
               </div>
-              
             </div>
+
+            <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
+              <h1 className='text-2xl text-black text-center my-3 font-serif'>Chatbot</h1>
+              <Link href="/Chatbot"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/chatbot.PNG" alt="seattle crime locator"/></Link>
+              <p className='text-black my-3'>FastAPI, Python, MongoDB</p>
+              <p>A chatbot that can answer simple questions about me and learn as the user continues talking with it. This was my first time using python to make a rest API. The user interface is made using NextJS and is a part of this portfolio site. </p>
+              <div className='flex justify-end'>
+                <div className='w-10' onMouseEnter={() => {sethideGit6(false)}} onMouseLeave={() => {sethideGit6(true)}}>
+                  {hideGit6 && (
+                    <img src="/newGithub.png" alt="newGithub" className='my-3 '/>
+                  )}
+                  {hideGit6 === false && (
+                  <Link href="https://github.com/kyleung1/chatbot">
+                    <img src="/redgithub.png" alt="newGithub" className='my-3 '/>
+                  </Link>
+                  )}
+                </div>
+                <div className='w-10' onMouseEnter={() => {sethideEx6(false)}} onMouseLeave={() => {sethideEx6(true)}}>
+                  {hideEx6 && (
+                    <img src="/external.png" alt="external link" className='my-3 '/>
+                  )}
+                  {hideEx6 === false && (
+                  <Link href="/Chatbot">
+                    <img src="/external-rose.png" alt="external link" className='my-3 '/>
+                  </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+
             <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Package Tracker</h1>
               <Link href="https://packagetracker.tech/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/package-tracker.PNG" alt="package tracker"/></Link>
@@ -81,6 +113,7 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
+
             <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Replayed</h1>
               <Link href="https://replayedgg.vercel.app/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/replayed.PNG" alt="replayed"/></Link>
@@ -109,6 +142,7 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
+
             <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Web Dev Evaluator</h1>
               <Link href="https://webdev-evaluator.vercel.app/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/webdeveval.PNG" alt="web dev evaluator"/></Link>
@@ -137,11 +171,11 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
+
             <div className='overflow-hidden border-2 border-black rounded-md bg-violet-300 shadow-2xl xl:w-[500px] lg:w-[400px] lg:h-[600px] p-5' data-aos="fade-right" data-aos-duration="1000">
               <h1 className='text-2xl text-black text-center my-3 font-serif'>Seattle Crime Locator</h1>
               <Link href="https://kyleung1.newGithub.io/SeattleCrimeLocator/"><img className="transform transition-all duration-300 hover:scale-110 my-3" src="/crimelocator.PNG" alt="seattle crime locator"/></Link>
               <p className='text-black my-3'>JavaScript, HTML, CSS, OpenLayers</p>
-              {/* <p> A simple web application to locate the nearest crime from either the user's ip address or a given address. The web app sources it's data from the spd public dataset on the Seattle Open Data portal that is updated daily. This was my first ever web application built and I am proud of my progress since. </p> */}
               <p>A simple web application to locate the nearest crime from either the user&apos;s ip address or a given address. The web app sources it&apos;s data from the spd public dataset on the Seattle Open Data Portal that is updated daily. This was my first ever web application built and I am proud of my progress since. </p>
               <div className='flex justify-end'>
                 <div className='w-10' onMouseEnter={() => {sethideGit5(false)}} onMouseLeave={() => {sethideGit5(true)}}>
@@ -166,12 +200,12 @@ export default function Project_Preview() {
                 </div>
               </div>
             </div>
+            
           </div>
         </div>
-        
+
         <div className='flex flex-col items-center my-10'>
             <Link href="ComingSoon" className='hover:underline hover:text-rose-500'>Click here to view more projects.</Link>
-
         </div>
 
       </div>
