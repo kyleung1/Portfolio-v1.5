@@ -4,7 +4,8 @@ export default function page() {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-5xl my-20 text-indigo-800">About Me</h1>
-      <div className="flex flex-col items-center w-1/2">
+      <img src="/shinji.png" alt="shinji" />
+      <div className="flex flex-col items-center w-1/2 my-20">
         <p className="text-xl">
           Around June of 2022 was when I started seriously coding and producing
           personal projects. Since then, I have been mostly self teaching myself
@@ -13,13 +14,26 @@ export default function page() {
         </p>
         <p className="text-xl my-20">
           In my free time I like to play video games, workout in the gym, listen
-          to music, and watch movies. Recently, I have mostly been trying to
-          hone my
+          to music, and watch movies.
         </p>
       </div>
-      {/* <img src="/shinji.png" alt="shinji"/> */}
-      <Link href="/Chatbot" className="hover:text-rose-500 my-10">
-        Learn more about me through my Chatbot
+      <div className="flex flex-col items-center w-1/2">
+        <h2 className="text-3xl text-indigo-800">Video Games</h2>
+        <p className="text-xl my-5">
+          I tend to play competitive video games and get really into them for an
+          extended period. Single player games seem interesting but I would like
+          to own a controller before I actually start getting into them. These
+          are some that I have played recently.
+        </p>
+        <div className="w-3/4">
+          <img src="valorant.webp" alt="valorant" />
+          <img src="fortnite.jpg" alt="fortnite" />
+          <img src="tft.jpg" alt="tft" />
+        </div>
+      </div>
+
+      <Link href="/Chatbot" className="hover:text-rose-500 my-10 text-xl">
+        Learn more about me through my Chatbot here
       </Link>
     </div>
   );
