@@ -12,12 +12,12 @@ export default function page() {
           new web development technologies and have built many full stack web
           applications.
         </p>
-        <p className="text-xl my-20">
+        <p className="text-xl my-5">
           In my free time I like to play video games, workout in the gym, listen
           to music, and watch movies.
         </p>
       </div>
-      <div className="flex flex-col items-center w-1/2">
+      <div className="flex flex-col items-center w-1/2 mb-20">
         <h2 className="text-3xl text-indigo-800">Video Games</h2>
         <p className="text-xl my-5">
           I tend to play competitive video games and get really into them for an
@@ -31,8 +31,23 @@ export default function page() {
           <img src="tft.jpg" alt="tft" />
         </div>
       </div>
-
-      <Link href="/Chatbot" className="hover:text-rose-500 my-10 text-xl">
+      <div className="flex flex-col items-center w-1/2">
+        <h2 className="text-3xl text-indigo-800">Music</h2>
+        <p className="text-xl my-5">
+          I am really into rock, indie, and alternative music. Here is one of my
+          playlists. Some artists I am currently into are Galileo Galilei,
+          Public Library Commute, and Pearl Jam.
+        </p>
+        <iframe
+          className="max-w-4xl"
+          src="https://open.spotify.com/embed/playlist/3I0C838AVgfdZkcQ5ogPZO?utm_source=generator"
+          width="100%"
+          height="352"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <Link href="/Chatbot" className="hover:text-rose-500 my-10 text-xl w-1/2">
         Learn more about me through my Chatbot here
       </Link>
     </div>
