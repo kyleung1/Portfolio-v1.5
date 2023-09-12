@@ -43,7 +43,9 @@ export default function ContactPage() {
   return (
     <>
       <div className="flex flex-col items-center">
-        <h1 className="text-5xl text-indigo-800 my-20">Contact</h1>
+        <h1 className="text-5xl text-indigo-800 my-20" data-aos="fade-up">
+          Contact
+        </h1>
 
         <input
           ref={Email}

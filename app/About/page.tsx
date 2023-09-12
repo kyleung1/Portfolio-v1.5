@@ -3,7 +3,9 @@ import Link from "next/link";
 export default function page() {
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-5xl my-20 text-indigo-800">About Me</h1>
+      <h1 className="text-5xl my-20 text-indigo-800" data-aos="fade-up">
+        About Me
+      </h1>
       <img src="/shinji.png" alt="shinji" />
       <div className="flex flex-col items-center w-1/2 my-20">
         <p className="text-xl">
