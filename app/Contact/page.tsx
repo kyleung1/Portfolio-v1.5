@@ -67,7 +67,7 @@ export default function ContactPage() {
           Send
         </button>
 
-        <p className="my-10">Alternatively my email is leungkyle2@gmail.com</p>
+        <p className="my-10">leungkyle2@gmail.com</p>
       </div>
     </>
   );
