@@ -1,4 +1,4 @@
-import Skills from "../Skills";
+import Skills from "../Components/Skills";
 import Link from "next/link";
 
 export default function page() {
