@@ -89,7 +89,7 @@ export default function Project_Preview() {
                   />
                 )}
                 {hideEx1 === false && (
-                  <Link href="https://portfolio-v1-5-kappa.vercel.app/">
+                  <Link href="https://kyleleung.vercel.app/">
                     <img
                       src="/external-rose.png"
                       alt="external link"
