@@ -13,6 +13,9 @@ export default function landing() {
             <span className="lg:text-xl text-lg ml-3">based in</span> Seattle,
             Washington
           </h2>
+          <h2 className="lg:text-3xl text-2xl mt-10 ml-3">
+            FullStack Web Developer / MSCS student at CU Boulder
+          </h2>
         </div>
         <div className="w-1/4 max-w-[500px] shadow-2xl">
           <img src="/Kyle.PNG" alt="me" className="rounded-md" />
