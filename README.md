@@ -10,6 +10,3 @@ A portfolio site to showcase my projects and experience.
 - aos - A javascript library that animates transitions of elements.
 
 **Things to add/change**:
-
-- about page
-- slide
